@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Juste prix</title>
+  </head>
+  <body>
+   <input type="text" id="compteur">
+   <button id="plus">+</button>
+   <button id="moins">-</button>
+    <script src="jquery-3.2.1.js"></script>
+    <script>
+var up = 0;
+           $('#plus').click(function(){
+             up = up +1;
+             $('#compteur').val(up);
+           });
+           $('#moins').click(function(){
+             up = up -1;
+             $('#compteur').val(up);
+           });
+    </script>
+  </body>
+</html>
